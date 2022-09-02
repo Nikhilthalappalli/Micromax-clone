@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Micromax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #231f20;
+        width: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        border: none;
+        /* border-radius: 100%; */
+      }
+      .product-image {
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: white;
+      }
+      .iframevideo {
+        width: 100%;
+        height: 400px;
+        border: 0;
+        overflow: hidden;
+        position: relative;
+      }
+      .video-area {
+        position: relative;
+        overflow: hidden;
+      }
+      .video-caption {
+        background-color: #ffffff;
+        box-shadow: 0 4px 20px 0 rgb(0 0 0 / 20%);
+        padding-top: 5%;
+        padding-bottom: 40px;
+      }
+      .btn-know {
+        border-radius: 50px;
+        transition: all ease-out 0.2s;
+        padding: 5px 60px;
+        overflow: hidden;
+        position: relative;
+        font-size: 2rem;
+        font-weight: 500;
+        display: inline-block;
+        text-decoration: none;
+        border: 0;
+        outline: none;
+        white-space: nowrap;
+        height: auto;
+        background-color: #77cdd6;
+        border: 1px #77cdd6 solid;
+        color: #ffffff;
+      }
+      .btn-know:hover {
+        color: #77cdd6;
+        background-color: #ffffff;
+        border: 1px #77cdd6 solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-md-6 col-9 p-3 ps-5">
+          <img
+            src="https://micromaxinfo.com/pub/static/version1655611448/frontend/Smartwave/porto_child/en_US/images/mmx-logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 col-3 my-auto me-auto">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-info" href="#">mobile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">audio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">consumer electronics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">feature phones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">support</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav mx-1 my-0 ps-3">
+                <li class="hidden-xs hidden-sm ps-3">
+                  <a href="#">
+                    <img
+                      src="https://micromaxinfo.com/pub/static/version1655611448/frontend/Smartwave/porto_child/en_US/images/account.svg"
+                      height="20"
+                      alt="My Account"
+                    />
+                  </a>
+                </li>
+                <li class="hidden-xs hidden-sm ps-3">
+                  <a href="#">
+                    <img
+                      src="https://micromaxinfo.com/pub/static/version1655611448/frontend/Smartwave/porto_child/en_US/images/cart.svg"
+                      height="20"
+                      alt="My Account"
+                    />
+                  </a>
+                </li>
+                <li class="hidden-xs hidden-sm ps-3">
+                  <a href="#" class="search-toggle-icon">
+                    <img
+                      src="https://micromaxinfo.com/pub/static/version1655611448/frontend/Smartwave/porto_child/en_US/images/search.svg"
+                      height="20"
+                      alt="Cart"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/micro 1.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/micro 2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/micro 3.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/micro 4.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/micro 5.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="container col-8">
+        <h2 class="text-center my-3" style="font-weight: 700; color: #231f20">
+          Smartphones
+        </h2>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item ms-5">
+              <div class="card align-items-center">
+                <div
+                  class=" product-image d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/i/n/in2c.jpg"
+                    class="card-img-top align-items-center"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body mt-2">
+                  <p class="text-center">IN 2C(4GB|64GB)</p>
+                  <h6 class="text-center">₹7,499.00</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item ms-5">
+              <div class="card align-items-center">
+                <div
+                  class=" product-image d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/i/n/in2bthumbnil_1_.png"
+                    class="card-img-top align-items-center"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body mt-2">
+                  <p class="card-text">IN 2B(4GB|64GB)</p>
+                  <h6 class="text-center">₹8,499.00</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item ms-5">
+              <div class="card align-items-center">
+                <div
+                  class=" product-image d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    class="card-img-top align-items-center"
+                    src="https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/i/n/in-note1_1__1.png"
+                    loading="lazy"
+                    alt="in note 1 (64GB)"
+                  />
+                </div>
+                <div class="card-body mt-2">
+                  <p class="card-text">in note 1(64GB)</p>
+                </div>
+              </div>
+            </div>
+            <div class="item ms-5">
+              <div class="card align-items-center">
+                <div
+                  class=" product-image d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/i/n/in2bthumbnil_1_.png"
+                    class="card-img-top align-items-center"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body mt-2">
+                  <p class="card-text">IN 2b (6GB|64GB)</p>
+                  <h6 class="text-center">₹9,499.00</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item ms-5">
+              <div class="card align-items-center">
+                <div
+                  class=" product-image d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/n/o/note_2_brown_1.png"
+                    class="card-img-top align-items-center"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body mt-2">
+                  <p class="card-text">IN NOTE 2(4GB|64GB)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row" style="background-color: #f5f5f5">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="text-center mt-3 mb-3" style="font-weight: 1000">Audio</h2>
+        </div>
+        <div class="row mt-0 mt-sm-2">
+          <div class="col-md-6">
+            <div class="text-center bg-white" style="margin: 0px 50px 0px 50px">
+              <img
+                src="https://micromaxinfo.com/pub/media/wysiwyg/Airfunks/airfunk_pro.png"
+                width="150px"
+              />
+              <div>
+                <h2>Airfunk 1 pro</h2>
+                <p class="subText">Shor no More!</p>
+                <h6 class="text-warning">₹2,444.00</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-center bg-white" style="margin: 0px 50px 0px 50px">
+              <img
+                src="	https://micromaxinfo.com/pub/media/wysiwyg/Airfunks/airfunk.png"
+                width="150px"
+              />
+              <div>
+                <h2>Airfunk 1</h2>
+                <p class="subText">Voice Ulta Game Palta</p>
+                <h6 class="text-warning">₹999.00</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row">
+      <a href="#">
+        <img
+          class="visible-md d-sm-none d-md-block d-none d-sm-block img-fluid"
+          src="https://micromaxinfo.com/pub/media/wysiwyg/banners/Extended-Warranty-Webpage-02.png"
+          alt=""
+        />
+      </a>
+      <a href="#">
+        <img
+          class="d-md-none"
+          src="https://micromaxinfo.com/pub/media/wysiwyg/banners/Extended-Warranty-Webpage-03.png"
+          alt=""
+        />
+      </a>
+    </section>
+    <section class="mt-5 animatedParent">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 video-area">
+            <div class="iframevideo">
+              <iframe
+                class="mx-3"
+                width="100%"
+                height="400px"
+                src="https://www.youtube.com/embed/aRo69b1wTNg?version=3&rel=0&controls=0&showinfo=0&autoplay=0&mute=0&loop=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 video-caption text-center">
+            <h2>India ke liye</h2>
+            <p class="mt-5 pb-2 mb-md-5 pb-md-1">
+              "We invite you to join the in mobiles community. Our mission
+              through this community is to drive India's new success story and
+              bring together IN-dians who want to make a change. Here, you will
+              get early access to the latest announcements, new launches,
+              contests, exclusive offers and will let you connect with the
+              fellow techies."
+            </p>
+            <p>
+              <a class="btn-know" href="#">Know More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <div class="row mt-xl-5 pb-3">
+          <div
+            class="col-12 col-md-6 col-lg-6 animated fadeInUpShort delay-1000 go"
+          >
+            <div
+              class="follow-us px-0 py-4 px-lg-5 py-lg-4 d-flex justify-content-between align-items-center flex-lg-row"
+              style="background-color: #f1f1f1;"
+            >
+              <h4>Follow us on Social</h4>
+              <ul
+                class="my-0 px-5 py-4 py-lg-0 px-lg-0 mt-4 mt-lg-0 d-flex justify-content-center justify-content-lg-between"
+                style="list-style-type: none;"
+              >
+                <li class="mx-2">
+                  <img
+                    height="24px"
+                    width="24px"
+                    src="https://img.icons8.com/ios/344/instagram-new--v1.png"
+                    alt=""
+                  />
+                </li>
+                <li class="mx-2">
+                  <img
+                    height="24px"
+                    width="24px"
+                    src="https://img.icons8.com/ios-glyphs/344/facebook-new.png"
+                    alt=""
+                  />
+                </li>
+                <li class="mx-2">
+                  <img
+                    height="24px"
+                    width="24px"
+                    src="https://img.icons8.com/ios-glyphs/344/twitter--v1.png"
+                    alt=""
+                  />
+                </li>
+                <li class="mx-2">
+                  <img
+                    height="24px"
+                    width="24px"
+                    src="https://img.icons8.com/material-rounded/344/youtube-play.png"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 pe-0 mt-5 mt-lg-0">
+            <div class="pt-2">
+              <h4 class="my-0">Get updates on our latest products, offers & much more.</h4>
+              <form class="d-flex pt-3" action="#">
+                <input type="email" name="email" class="flex-grow-1 border-0" height="50px" placeholder="Enter your email address">
+                <button class="border-0 bg-white" type="submit">
+                  <span>
+                    <img src="https://micromaxinfo.com/pub/static/version1655611448/frontend/Smartwave/porto_child/en_US/images/submit-btn.png">
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+    <!-- <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script>
+ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
